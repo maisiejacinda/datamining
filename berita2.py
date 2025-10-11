@@ -85,3 +85,7 @@ df = df.dropna().drop_duplicates()
 
 # Menghapus data kosong dan duplikat
 df = df.dropna().drop_duplicates()
+
+# Menyimpan hasil preprocessing ke file CSV
+df.to_csv('preprocessed_data.csv', index=False)
+print("Preprocessing selesai, file disimpan sebagai preprocessed_data.csv")
